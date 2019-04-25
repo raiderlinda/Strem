@@ -20,30 +20,30 @@ client.on('message', message => {
       
   if (message.content.startsWith(adminprefix + 'p')) {
     client.user.setGame(argresult);
-      message.channel.send(`**Now Playig   ${argresult}**`)
+      message.channel.send(`:white_check_mark:`)
   } else 
      if (message.content === (adminprefix + "leaveserver")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'w')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**Now Watching   ${argresult}**`)
+      message.channel.send(`:white_check_mark:`)
   } else 
   if (message.content.startsWith(adminprefix + 'l')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**Now Listening   ${argresult}**`)
+      message.channel.send(`:white_check_mark:`)
   } else 
   if (message.content.startsWith(adminprefix + 's')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
-      message.channel.send(`**Now Streaming   ${argresult}**`)
+      message.channel.send(`:white_check_mark:`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
+      message.channel.send(`:white_check_mark:`)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
   client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
+    message.channel.send(`:white_check_mark:`);
 }
 });
 
